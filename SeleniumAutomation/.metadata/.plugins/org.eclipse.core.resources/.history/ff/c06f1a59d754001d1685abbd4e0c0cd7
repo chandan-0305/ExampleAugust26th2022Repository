@@ -1,0 +1,7 @@
+//1. launchBrowser --> navigate --> Login --> CreateUser --> DeleteUser --> Logout--> CloseApplication
+
+package com.sgtesting.actitime;
+
+public class CreateUserPom1 {
+
+}

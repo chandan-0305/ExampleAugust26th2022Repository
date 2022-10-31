@@ -1,0 +1,6 @@
+6. launchBrowser --> navigate --> Login --> Create Customer --> Create Project--> delete Project-->delete Customer --> Logout --> CloseApplication
+package com.sgtesting.actitime;
+
+public class CreateProject {
+
+}

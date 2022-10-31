@@ -1,0 +1,34 @@
+//1. launchBrowser --> navigate --> Login --> CreateUser --> DeleteUser --> Logout--> CloseApplication
+
+package com.sgtesting.actitime;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CreateUserPom1 {
+	public static WebDriver oBrowser=null;
+	public static ActiTimePage oPage=null;
+	public static void main(String[] args) {
+		launchBrowser();
+		navigate();
+		login();
+		minimizeFlyOutWindow();
+		logout();
+		closeApplication();
+	}
+	
+	private static void launchBrowser()
+	{
+		try
+		{
+			System.setProperty("webdriver.chrome.driver","E:\\ECLIPSETOOL\\ExampleAutomation\\SeleniumAutomation\\Web-Automation\\Library\\drivers\\chromedriver.exe");
+			oBrowser = new ChromeDriver();
+			oPage=new ActiTimePage(oBrowser);
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+	}
+
+}

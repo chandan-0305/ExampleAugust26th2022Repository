@@ -1,0 +1,112 @@
+package com.sgtesting.actitime;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class ActiTimePage {
+	public ActiTimePage(WebDriver oBrowser)
+	{
+		PageFactory.initElements(oBrowser, this);
+	}
+	//WebElement for User Name Text Field
+	private WebElement username;
+
+	public WebElement getUserName()
+	{
+		return username;
+	}
+
+	//WebElement for Password Text Field
+	private WebElement pwd;
+	public WebElement getPassword()
+	{
+		return pwd;
+	}
+
+	//WebElement for Login Button
+	@FindBy(xpath="//div[text()='Login ']")
+	private WebElement oLogin;
+	public WebElement getLogin()
+	{
+		return oLogin;
+	}
+
+	//WebElement for FlyOutWindow
+	private WebElement gettingStartedShortcutsPanelId;
+	public WebElement getFlyOutWindow()
+	{
+		return gettingStartedShortcutsPanelId;
+	}
+
+	//WebElement for Create UserButton
+	@FindBy(xpath="//*[@id='topnav']/tbody/tr[1]/td[5]/a/div[2]")
+	private WebElement creaUserButton;
+	public WebElement getCreaUserButton()
+	{
+		return creaUserButton;
+	}
+
+	//WebElement for FirstName
+	@FindBy(name="firstName")
+	private WebElement firdtname;
+	public WebElement firdtname()
+	{
+		return firdtname;
+	}
+	//WebElement for MiddleName
+	@FindBy(name="middleName")
+	private WebElement middleName;
+	public WebElement middleName()
+	{
+		return middleName;
+	}
+	//WebElement for LastName
+		@FindBy(name="lastName")
+		private WebElement lastName;
+		public WebElement lastName()
+		{
+			return lastName;
+		}
+
+		//WebElement for Email
+				@FindBy(name="email")
+				private WebElement email;
+				public WebElement email()
+				{
+					return email;
+				}
+				
+				//WebElement for Username1
+				@FindBy(name="username")
+				private WebElement username1;
+				public WebElement username1()
+				{
+					return username1;
+				}
+				
+				//WebElement for Password
+				@FindBy(name="password")
+				private WebElement password;
+				public WebElement password()
+				{
+					return password;
+				}
+				
+				//WebElement for LastName
+				@FindBy(name="lastName")
+				private WebElement passwordCopy;
+				public WebElement passwordCopy()
+				{
+					return passwordCopy;
+				}
+	//WebElement for Logout Link
+	@FindBy(linkText="Logout")
+	private WebElement oLogout;
+	public WebElement getLogoutLink()
+	{
+		return oLogout;
+	}
+
+}
