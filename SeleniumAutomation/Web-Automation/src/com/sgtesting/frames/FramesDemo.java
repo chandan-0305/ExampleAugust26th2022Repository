@@ -17,7 +17,7 @@ public class FramesDemo {
 	{
 		try
 		{
-			String path=System.getProperty("user.dir");
+			//String path=System.getProperty("user.dir");
 			System.setProperty("webdriver.chrome.driver","E:\\GitRepository\\CurrentWorkspace\\ExampleAugust26th2022Repository\\SeleniumAutomation\\Web-Automation\\Library\\drivers\\chromedriver.exe");
 			oBrowser=new ChromeDriver();
 			oBrowser.manage().window().maximize();
