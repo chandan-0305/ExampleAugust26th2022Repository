@@ -7,27 +7,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CreateProject {
 	public static WebDriver oBrowser=null;
-	public static void main(String[] args) {
-
-		launchBrowser();
-		navigate();
-		login();
-		minimizeFlyOutwindow();
-		createCustomer();
-		createProject();
-		deleteProject();
-		deleteCustomer();
-		logout();
-		closeApp();
-	}
+	
 	public static void launchBrowser()
 	{
 		try
 		{
-			System.setProperty("webdriver.chrome.driver", "E:\\GitRepository\\CurrentWorkspace\\ExampleAugust26th2022Repository\\Reflection-Automation\\Library\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "E:\\ECLIPSETOOL\\ExampleAutomation\\SeleniumAutomation\\Web-Automation\\Library\\drivers\\chromedriver.exe");
 			oBrowser=new ChromeDriver();
 			oBrowser.manage().window().maximize();
-			Thread.sleep(5000);
 		}catch(Exception e)
 		{
 			e.printStackTrace();
@@ -39,7 +26,7 @@ public class CreateProject {
 		try
 		{
 			oBrowser.get("http://localhost/login.do");
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		}catch(Exception e)
 		{
 			e.printStackTrace();

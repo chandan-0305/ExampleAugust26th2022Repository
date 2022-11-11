@@ -1,0 +1,176 @@
+//7. launchBrowser --> navigate --> Login --> Create Customer --> Create Project-->Modify Project--> delete Project-->delete Customer --> Logout --> CloseApplication
+package com.sgtesting.actitime;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ModifyProject {
+	public static WebDriver oBrowser=null;
+	
+	public static void launchBrowser()
+	{
+		try 
+		{
+			System.setProperty("webdriver.chrome.driver","E:\\ECLIPSETOOL\\ExampleAutomation\\SeleniumAutomation\\Web-Automation\\Library\\drivers\\chromedriver.exe");
+			oBrowser=new ChromeDriver();
+			oBrowser.manage().window().maximize();
+		}catch(Exception e)
+		{
+			
+		}
+	}
+	public static void Navigate()
+	{
+		try
+		{
+			oBrowser.get("http://localhost/login.do");
+
+			Thread.sleep(1000);
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+
+	}
+	public static void Login()
+	{
+		try
+		{
+			oBrowser.findElement(By.id("username")).sendKeys("admin");
+			oBrowser.findElement(By.name("pwd")).sendKeys("manager");
+			oBrowser.findElement(By.xpath("//*[@id='loginButton']/div")).click();
+			Thread.sleep(1000);
+
+		}catch(Exception e)
+
+		{
+			e.printStackTrace();
+		}
+	}
+	public static void Minimize()
+	{
+		try
+		{
+			oBrowser.findElement(By.xpath("//*[@id='gettingStartedShortcutsPanelId']")).click();
+			Thread.sleep(1000);
+
+		}catch(Exception e)
+
+		{
+			e.printStackTrace();
+		}
+	}
+	public static void Createcustomer()
+	{
+		try
+		{
+			oBrowser.findElement(By.xpath("//*[@id='topnav']/tbody/tr/td[3]/a/div[2]")).click();
+			Thread.sleep(1000);
+			oBrowser.findElement(By.xpath("//div[text()='Add New']")).click();
+			Thread.sleep(1000);
+			oBrowser.findElement(By.xpath("//div[text()='+ New Customer']")).click();
+			Thread.sleep(1000);
+			oBrowser.findElement(By.id("customerLightBox_nameField")).sendKeys("TATA");
+			Thread.sleep(1000);
+			oBrowser.findElement(By.xpath("//span[text()='Create Customer']")).click();
+			Thread.sleep(1000);
+			
+						
+		}catch(Exception e)
+
+		{
+			e.printStackTrace();
+		}
+	}
+	public static void CreateProject()
+	{
+		try
+		{
+			oBrowser.findElement(By.xpath("//*[@id='cpTreeBlock']/div[2]/div[1]/div[2]/div/div[2]")).click();
+			Thread.sleep(1000);
+			oBrowser.findElement(By.xpath("//div[text()='+ New Project']")).click();
+			Thread.sleep(1000);
+			oBrowser.findElement(By.id("projectPopup_projectNameField")).sendKeys("Driving Automation");
+			Thread.sleep(1000);			
+			oBrowser.findElement(By.xpath("//span[text()='Create Project']")).click();
+			Thread.sleep(3000);
+			
+			
+						
+		}catch(Exception e)
+
+		{
+			e.printStackTrace();
+		}
+	}
+	public static void ModifyProject1()
+	{
+		try
+		{
+			oBrowser.findElement(By.xpath("//*[@id='cpTreeBlock']/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[3]/div[3]")).click();
+			Thread.sleep(1000);
+			oBrowser.findElement(By.xpath("//*[@id='taskListBlock']/div[4]/div[2]/div[1]/div[1]/div[1]/div/div[1]/div[3]/div/div[1]")).click();
+			Thread.sleep(1000);
+			oBrowser.findElement(By.xpath("//div[text()='Archived']")).click();
+			Thread.sleep(1000);
+			
+			
+						
+		}catch(Exception e)
+
+		{
+			e.printStackTrace();
+		}
+	}
+	public static void DeleteProject()
+	{
+		try
+		{
+			oBrowser.findElement(By.xpath("//*[@id='cpTreeBlock']/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div[4]")).click();
+			Thread.sleep(2000);
+			
+			oBrowser.findElement(By.xpath("//div[text()='ACTIONS']")).click();
+			Thread.sleep(1000);
+			oBrowser.findElement(By.xpath("//div[text()='Delete']")).click();
+			Thread.sleep(1000);
+			oBrowser.findElement(By.xpath("//span[text()='Delete permanently']")).click();
+			Thread.sleep(1000);
+						
+		}catch(Exception e)
+
+		{
+			e.printStackTrace();
+		}
+	}
+	public static void logout()
+	{
+		try
+		{
+			oBrowser.findElement(By.linkText("Logout")).click();
+			Thread.sleep(2000);
+
+		}catch(Exception e)
+
+		{
+			e.printStackTrace();
+		}
+	}
+	public static void CloseBrowser()
+	{
+		try
+		{
+			oBrowser.close();
+			Thread.sleep(3000);
+
+
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+
+	}
+
+
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Actitime Scenarios">
+   <test name="Test cases">
+   		<classes>
+   			<class name="com.sgtesting.testngscenario.CreateCustomer"></class>
+   			<class name="com.sgtesting.testngscenario.CreateProject"></class>
+   			<class name="com.sgtesting.testngscenario.CreateTask"></class>
+   			<class name="com.sgtesting.testngscenario.CreateUserScenarioDemo"></class>
+   			<class name="com.sgtesting.testngscenario.CustomerModify"></class>
+   			<class name="com.sgtesting.testngscenario.LoginLogoutDemo"></class>
+   			<class name="com.sgtesting.testngscenario.ModifyProject"></class>
+   			<class name="com.sgtesting.testngscenario.ModifyUserScenario"></class>
+   		</classes>
+   </test>
+</suite>
