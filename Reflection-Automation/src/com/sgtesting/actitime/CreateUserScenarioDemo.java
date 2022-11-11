@@ -26,7 +26,7 @@ public static void launchBrowser()
 {
 	try
 	{
-		System.setProperty("webdriver.chrome.driver", "E:\\\\GitRepository\\\\CurrentWorkspace\\\\ExampleAugust26th2022Repository\\\\Reflection-Automation\\\\Library\\\\drivers\\\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:\\GitRepository\\CurrentWorkspace\\ExampleAugust26th2022Repository\\Reflection-Automation\\Library\\drivers\\chromedriver.exe");
 		oBrowser=new ChromeDriver();
 	}catch(Exception e)
 	{

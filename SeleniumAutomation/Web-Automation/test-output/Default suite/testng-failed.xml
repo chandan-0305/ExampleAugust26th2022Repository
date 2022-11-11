@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sgtesting.testngscenario.CreateUserScenarioDemo">
+      <class name="com.sgtesting.testngscenario.CreateCustomer">
         <methods>
-          <include name="createUser"/>
+          <include name="createCustomer" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.sgtesting.testngscenario.CreateUserScenarioDemo -->
+      </class> <!-- com.sgtesting.testngscenario.CreateCustomer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

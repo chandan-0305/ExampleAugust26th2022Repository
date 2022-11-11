@@ -79,7 +79,7 @@ public class CreateUserScenarioDemo {
 		}
 	}
    
-	@Test(priority =5,dataProvider="user data")	
+	@Test(priority =5,dataProvider="userdata")	
 	private static void createUser(String fn,String mn,String ln,String mail,String uname,String pwd,String pwdc)
 	{
 		WebElement cele= null;
@@ -161,10 +161,10 @@ public class CreateUserScenarioDemo {
 		return new Object[][] {{"admin","manager"}};
 	}
 	
-	@DataProvider(name="user data")
+	@DataProvider(name="userdata")
 	public Object[] getuserData()
 	{
-		return new Object[][] {{"demo","A"},{"User1","demo@gmail.com"},{"demoUser1","Welcome123"},{"Welcome123"}};
+		return new Object[][] {{"demo","A","User1","demo@gmail.com","demoUser1","Welcome123","Welcome123"}};
 	}
 
 }

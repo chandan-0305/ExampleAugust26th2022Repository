@@ -1,0 +1,444 @@
+<html>
+<head>
+<title>TestNG:  Test cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>73/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 10 23:45:49 GMT-08:00 2022</td>
+</tr>
+<tr><td>Total time:</td><td>425 seconds (425933 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateProject.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.testngscenario.CreateProject<br>Parameters: Wonderla, Amusment park Ticketing Software</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testngscenario.CreateProject@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateUserScenarioDemo.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngscenario.CreateUserScenarioDemo</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.testngscenario.CreateUserScenarioDemo@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateUserScenarioDemo.login()'><b>login</b><br>Test class: com.sgtesting.testngscenario.CreateUserScenarioDemo<br>Parameters: admin, manager</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngscenario.CreateUserScenarioDemo@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.LoginLogoutDemo.logout()'><b>logout</b><br>Test class: com.sgtesting.testngscenario.LoginLogoutDemo</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngscenario.LoginLogoutDemo@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateTask.CreateTask()'><b>CreateTask</b><br>Test class: com.sgtesting.testngscenario.CreateTask<br>Parameters: Task1</td>
+<td></td>
+<td>10</td>
+<td>com.sgtesting.testngscenario.CreateTask@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyProject.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testngscenario.ModifyProject</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngscenario.ModifyProject@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyProject.logout()'><b>logout</b><br>Test class: com.sgtesting.testngscenario.ModifyProject</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngscenario.ModifyProject@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyUserScenario.deleteUser()'><b>deleteUser</b><br>Test class: com.sgtesting.testngscenario.ModifyUserScenario</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testngscenario.ModifyUserScenario@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateUserScenarioDemo.createUser()'><b>createUser</b><br>Test class: com.sgtesting.testngscenario.CreateUserScenarioDemo<br>Parameters: demo, A, User1, demo@gmail.com, demoUser1, Welcome123, Welcome123</td>
+<td></td>
+<td>20</td>
+<td>com.sgtesting.testngscenario.CreateUserScenarioDemo@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateTask.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.testngscenario.CreateTask</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngscenario.CreateTask@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateProject.logout()'><b>logout</b><br>Test class: com.sgtesting.testngscenario.CreateProject</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngscenario.CreateProject@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyUserScenario.createUser()'><b>createUser</b><br>Test class: com.sgtesting.testngscenario.ModifyUserScenario<br>Parameters: demo, A, User1, demo@gmail.com, demoUser1, Welcome123, Welcome123</td>
+<td></td>
+<td>18</td>
+<td>com.sgtesting.testngscenario.ModifyUserScenario@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyUserScenario.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testngscenario.ModifyUserScenario</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngscenario.ModifyUserScenario@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateProject.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.testngscenario.CreateProject</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngscenario.CreateProject@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateTask.minimizeFlyOutwindow()'><b>minimizeFlyOutwindow</b><br>Test class: com.sgtesting.testngscenario.CreateTask</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngscenario.CreateTask@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyUserScenario.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.testngscenario.ModifyUserScenario</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngscenario.ModifyUserScenario@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateProject.minimizeFlyOutwindow()'><b>minimizeFlyOutwindow</b><br>Test class: com.sgtesting.testngscenario.CreateProject</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngscenario.CreateProject@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyProject.minimizeFlyOutwindow()'><b>minimizeFlyOutwindow</b><br>Test class: com.sgtesting.testngscenario.ModifyProject</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngscenario.ModifyProject@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateCustomer.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.testngscenario.CreateCustomer<br>Parameters: Wonderla, Amusment park Ticketing Software</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.testngscenario.CreateCustomer@16610890</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateTask.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testngscenario.CreateTask</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngscenario.CreateTask@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateTask.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.testngscenario.CreateTask</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngscenario.CreateTask@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateProject.login()'><b>login</b><br>Test class: com.sgtesting.testngscenario.CreateProject<br>Parameters: admin, manager</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngscenario.CreateProject@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CustomerModify.modifyCustomer()'><b>modifyCustomer</b><br>Test class: com.sgtesting.testngscenario.CustomerModify<br>Parameters: Wonderla1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngscenario.CustomerModify@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.LoginLogoutDemo.login()'><b>login</b><br>Test class: com.sgtesting.testngscenario.LoginLogoutDemo<br>Parameters: admin, manager</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngscenario.LoginLogoutDemo@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateCustomer.minimizeFlyOutwindow()'><b>minimizeFlyOutwindow</b><br>Test class: com.sgtesting.testngscenario.CreateCustomer</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngscenario.CreateCustomer@16610890</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateUserScenarioDemo.minimizeFlyOutwindow()'><b>minimizeFlyOutwindow</b><br>Test class: com.sgtesting.testngscenario.CreateUserScenarioDemo</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngscenario.CreateUserScenarioDemo@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateTask.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngscenario.CreateTask</td>
+<td></td>
+<td>16</td>
+<td>com.sgtesting.testngscenario.CreateTask@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateUserScenarioDemo.logout()'><b>logout</b><br>Test class: com.sgtesting.testngscenario.CreateUserScenarioDemo</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngscenario.CreateUserScenarioDemo@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateProject.createProject()'><b>createProject</b><br>Test class: com.sgtesting.testngscenario.CreateProject<br>Parameters: DELL Automation</td>
+<td></td>
+<td>10</td>
+<td>com.sgtesting.testngscenario.CreateProject@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateUserScenarioDemo.deleteUser()'><b>deleteUser</b><br>Test class: com.sgtesting.testngscenario.CreateUserScenarioDemo</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.testngscenario.CreateUserScenarioDemo@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CustomerModify.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.testngscenario.CustomerModify</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngscenario.CustomerModify@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyUserScenario.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngscenario.ModifyUserScenario</td>
+<td></td>
+<td>10</td>
+<td>com.sgtesting.testngscenario.ModifyUserScenario@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.LoginLogoutDemo.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.testngscenario.LoginLogoutDemo</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngscenario.LoginLogoutDemo@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyUserScenario.modifyUser()'><b>modifyUser</b><br>Test class: com.sgtesting.testngscenario.ModifyUserScenario<br>Parameters: demo1@gmail.com</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.testngscenario.ModifyUserScenario@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CustomerModify.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngscenario.CustomerModify</td>
+<td></td>
+<td>14</td>
+<td>com.sgtesting.testngscenario.CustomerModify@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyProject.createProject()'><b>createProject</b><br>Test class: com.sgtesting.testngscenario.ModifyProject<br>Parameters: DELL Automation</td>
+<td></td>
+<td>10</td>
+<td>com.sgtesting.testngscenario.ModifyProject@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateTask.logout()'><b>logout</b><br>Test class: com.sgtesting.testngscenario.CreateTask</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngscenario.CreateTask@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyUserScenario.logout()'><b>logout</b><br>Test class: com.sgtesting.testngscenario.ModifyUserScenario</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngscenario.ModifyUserScenario@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateTask.deleteProject()'><b>deleteProject</b><br>Test class: com.sgtesting.testngscenario.CreateTask</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testngscenario.CreateTask@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyProject.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.testngscenario.ModifyProject<br>Parameters: Wonderla, Amusment park Ticketing Software</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testngscenario.ModifyProject@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CustomerModify.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testngscenario.CustomerModify</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngscenario.CustomerModify@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateUserScenarioDemo.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.testngscenario.CreateUserScenarioDemo</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngscenario.CreateUserScenarioDemo@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyProject.deleteProject()'><b>deleteProject</b><br>Test class: com.sgtesting.testngscenario.ModifyProject</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngscenario.ModifyProject@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateCustomer.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testngscenario.CreateCustomer</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.testngscenario.CreateCustomer@16610890</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CustomerModify.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.testngscenario.CustomerModify</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngscenario.CustomerModify@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateUserScenarioDemo.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testngscenario.CreateUserScenarioDemo</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngscenario.CreateUserScenarioDemo@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateProject.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.testngscenario.CreateProject</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngscenario.CreateProject@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateTask.createProject()'><b>createProject</b><br>Test class: com.sgtesting.testngscenario.CreateTask<br>Parameters: DELL Automation</td>
+<td></td>
+<td>10</td>
+<td>com.sgtesting.testngscenario.CreateTask@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyProject.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngscenario.ModifyProject</td>
+<td></td>
+<td>14</td>
+<td>com.sgtesting.testngscenario.ModifyProject@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateCustomer.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.testngscenario.CreateCustomer</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngscenario.CreateCustomer@16610890</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CustomerModify.minimizeFlyOutwindow()'><b>minimizeFlyOutwindow</b><br>Test class: com.sgtesting.testngscenario.CustomerModify</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.testngscenario.CustomerModify@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateCustomer.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngscenario.CreateCustomer</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.testngscenario.CreateCustomer@16610890</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.LoginLogoutDemo.minimizeFlyOutwindow()'><b>minimizeFlyOutwindow</b><br>Test class: com.sgtesting.testngscenario.LoginLogoutDemo</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngscenario.LoginLogoutDemo@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyProject.deleteCustomer()'><b>deleteCustomer</b><br>Test class: com.sgtesting.testngscenario.ModifyProject</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngscenario.ModifyProject@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyUserScenario.login()'><b>login</b><br>Test class: com.sgtesting.testngscenario.ModifyUserScenario<br>Parameters: admin, manager</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngscenario.ModifyUserScenario@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateTask.login()'><b>login</b><br>Test class: com.sgtesting.testngscenario.CreateTask<br>Parameters: admin, manager</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testngscenario.CreateTask@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateTask.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.testngscenario.CreateTask<br>Parameters: Wonderla, Amusment park Ticketing Software</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.testngscenario.CreateTask@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.LoginLogoutDemo.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testngscenario.LoginLogoutDemo</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testngscenario.LoginLogoutDemo@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyUserScenario.minimizeFlyOutwindow()'><b>minimizeFlyOutwindow</b><br>Test class: com.sgtesting.testngscenario.ModifyUserScenario</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngscenario.ModifyUserScenario@1e04fa0a</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyProject.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.testngscenario.ModifyProject</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngscenario.ModifyProject@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateTask.DeleteTask()'><b>DeleteTask</b><br>Test class: com.sgtesting.testngscenario.CreateTask</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngscenario.CreateTask@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.LoginLogoutDemo.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngscenario.LoginLogoutDemo</td>
+<td></td>
+<td>10</td>
+<td>com.sgtesting.testngscenario.LoginLogoutDemo@4738a206</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateCustomer.login()'><b>login</b><br>Test class: com.sgtesting.testngscenario.CreateCustomer<br>Parameters: admin, manager</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngscenario.CreateCustomer@16610890</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateProject.navigate()'><b>navigate</b><br>Test class: com.sgtesting.testngscenario.CreateProject</td>
+<td></td>
+<td>10</td>
+<td>com.sgtesting.testngscenario.CreateProject@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyProject.ModifyProject()'><b>ModifyProject</b><br>Test class: com.sgtesting.testngscenario.ModifyProject</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngscenario.ModifyProject@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateCustomer.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.testngscenario.CreateCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.testngscenario.CreateCustomer@16610890</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.ModifyProject.login()'><b>login</b><br>Test class: com.sgtesting.testngscenario.ModifyProject<br>Parameters: admin, manager</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testngscenario.ModifyProject@66d3eec0</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateCustomer.logout()'><b>logout</b><br>Test class: com.sgtesting.testngscenario.CreateCustomer</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.testngscenario.CreateCustomer@16610890</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CustomerModify.logout()'><b>logout</b><br>Test class: com.sgtesting.testngscenario.CustomerModify</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.testngscenario.CustomerModify@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CustomerModify.createCustomer()'><b>createCustomer</b><br>Test class: com.sgtesting.testngscenario.CustomerModify<br>Parameters: Wonderla, Amusment park Ticketing Software</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.testngscenario.CustomerModify@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateProject.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.testngscenario.CreateProject</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.testngscenario.CreateProject@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CustomerModify.login()'><b>login</b><br>Test class: com.sgtesting.testngscenario.CustomerModify<br>Parameters: admin, manager</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.testngscenario.CustomerModify@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.testngscenario.CreateProject.deleteProject()'><b>deleteProject</b><br>Test class: com.sgtesting.testngscenario.CreateProject</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.testngscenario.CreateProject@5acf93bb</td></tr>
+</table><p>
+</body>
+</html>

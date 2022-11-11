@@ -2,7 +2,7 @@
 <suite name="testcases">
    <test name="Users">
    		<classes>
-   			<class name="com.sgtesting.Testcases.Users"></class>
+   			<class name="com.sgtesting.Testcases.LoginLogoutDemo"></class>
    		</classes>
    </test>
 </suite>
