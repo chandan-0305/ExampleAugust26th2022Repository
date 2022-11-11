@@ -109,7 +109,7 @@ public class CreateCustomer {
 			oBrowser.findElement(By.className("actionButton")).click();
 			Thread.sleep(2000);
 			oBrowser.findElement(By.xpath("//*[@id=\'taskListBlock\']/div[2]/div[4]/div/div[3]/div")).click();	
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			oBrowser.findElement(By.id("customerPanel_deleteConfirm_submitTitle")).click();
 			
 		}catch(Exception e)

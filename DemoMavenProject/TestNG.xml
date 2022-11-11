@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="testcases">
-   <test name="Users">
+   <test name="ActiTime">
    		<classes>
+   			<class name="com.sgtesting.Testcases.CreateCustomer"></class>
+   			<class name="com.sgtesting.Testcases.CreateProject"></class>
+   			<class name="com.sgtesting.Testcases.CreateTask"></class>
+   			<class name="com.sgtesting.Testcases.CreateUserScenarioDemo"></class>
+   			<class name="com.sgtesting.Testcases.CustomerModify"></class>
    			<class name="com.sgtesting.Testcases.LoginLogoutDemo"></class>
+   			<class name="com.sgtesting.Testcases.ModifyProject"></class>
+   			<class name="com.sgtesting.Testcases.ModifyUserScenario"></class>
+   			<class name="com.sgtesting.Testcases.CreateMultipleUser"></class> 	  					
    		</classes>
    </test>
 </suite>

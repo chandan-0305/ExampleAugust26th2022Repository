@@ -1,5 +1,5 @@
-//launchBrowser --> navigate --> Login --> Create Customer --> Create Project--> Create Tasks -->Delete Tasks --> delete Project-->delete Customer --> Logout --> CloseApplication
-package com.sgtesting.testngscenario;
+//7. launchBrowser --> navigate --> Login --> Create Customer --> Create Project-->Modify Project--> delete Project-->delete Customer --> Logout --> CloseApplication
+package com.sgtesting.Testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class CreateTask {
+public class ModifyProject {
 	public static WebDriver oBrowser=null;
 	
 	@Test(priority = 1)
@@ -25,24 +25,21 @@ public class CreateTask {
 			e.printStackTrace();
 		}
 	}
-   
+
 	@Test(priority = 2)
 	private static void navigate()
 	{
-		WebElement oEle=null;
 		try
 		{
 			oBrowser.get("http://localhost/login.do");
 			Thread.sleep(5000);
-			oEle=oBrowser.findElement(By.xpath("//td[text()='Please identify yourself']"));
-			Assert.assertTrue(oEle.isDisplayed());
 		}catch(Exception e)
 		{
 			e.printStackTrace();
 		}
 	}
     
-	@Test(priority = 3, dataProvider = "login")
+	@Test(priority = 3,dataProvider = "login")
 	private static void login(String user,String pwd)
 	{
 		try
@@ -73,10 +70,12 @@ public class CreateTask {
 			e.printStackTrace();
 		}
 	}
-   
-	@Test(priority = 5 , dataProvider="createuser")
+    
+	@Test(priority = 5,dataProvider="createuser")
 	private static void createCustomer(String cname,String cdetails)
-	{		
+	{
+		
+
 		try
 		{
 			oBrowser.findElement(By.xpath("//*[@id=\'topnav\']/tbody/tr/td[3]/a/div[2]")).click();
@@ -94,6 +93,7 @@ public class CreateTask {
 			e.printStackTrace();
 		}
 	}
+    
 	@Test(priority = 6 ,dataProvider="projectData")
 	private static void createProject(String pname)
 	{
@@ -116,54 +116,27 @@ public class CreateTask {
 		}
 
 	}
-	
-	@Test(priority = 7 ,dataProvider="taskData")
-	private static void CreateTask(String tsk)
+	@Test(priority = 7)
+	private static void ModifyProject1()
 	{
-		
 		try
 		{
-			oBrowser.findElement(By.xpath("//div[text()='Add New Task']")).click();
+			oBrowser.findElement(By.xpath("//*[@id='cpTreeBlock']/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[3]/div[3]")).click();
 			Thread.sleep(2000);
-			oBrowser.findElement(By.xpath("//div[text()='Create new tasks']")).click();
-			Thread.sleep(2000);			
-			oBrowser.findElement(By.xpath("//*[@id=\'createTasksPopup_createTasksTableContainer\']/table/tbody/tr[1]/td[1]/input")).sendKeys(tsk);
-			Thread.sleep(3000);
-			WebElement tLink=oBrowser.findElement(By.xpath("//span[text()='Create Tasks']"));
-			Assert.assertTrue(tLink.isDisplayed());
-			oBrowser.findElement(By.xpath("//span[text()='Create Tasks']")).click();
-			Thread.sleep(3000);	
+			oBrowser.findElement(By.xpath("//*[@id='taskListBlock']/div[4]/div[2]/div[1]/div[1]/div[1]/div/div[1]/div[3]/div/div[1]")).click();
+			Thread.sleep(2000);
+			oBrowser.findElement(By.xpath("//div[text()='Archived']")).click();
+			Thread.sleep(2000);
 			
+			
+						
 		}catch(Exception e)
 
 		{
 			e.printStackTrace();
 		}
 	}
-	
 	@Test(priority = 8)
-	private static void DeleteTask()
-	{
-		try
-		{
-			oBrowser.findElement(By.xpath("//*[@id=\'taskListBlock\']/div[1]/div[2]/div[1]/table[1]/tbody/tr/td[2]/div/div[2]")).click();
-			Thread.sleep(2000);
-			oBrowser.findElement(By.xpath("//*[@id=\'taskListBlock\']/div[3]/div[1]/div[2]/div[3]/div/div/div[2]")).click();
-			Thread.sleep(2000);
-			oBrowser.findElement(By.xpath("//*[@id=\'taskListBlock\']/div[3]/div[4]/div/div[3]/div")).click();
-			Thread.sleep(2000);		
-			oBrowser.findElement(By.id("taskPanel_deleteConfirm_submitTitle")).click();
-			Thread.sleep(2000);	
-			
-		}catch(Exception e)
-
-		{
-			e.printStackTrace();
-		}
-	}
-	
-	
-	@Test(priority = 9)
 	private static void deleteProject()
 	{
 		try
@@ -184,7 +157,7 @@ public class CreateTask {
 		}
 		}
 	
-	@Test(priority = 10)
+	@Test(priority = 9)
 	private static void deleteCustomer()
 	{
 
@@ -205,7 +178,7 @@ public class CreateTask {
 
 	}
 	
-	@Test(priority =11)
+	@Test(priority = 10)
 	private static void logout()
 	{
 		try
@@ -218,7 +191,7 @@ public class CreateTask {
 		}
 	}
     
-	@Test(priority = 12)
+	@Test(priority = 11)
 	private static void closeApp()
 	{
 		try
@@ -245,11 +218,6 @@ public class CreateTask {
 	public Object[][] getprojectData()
 	{
 		return new Object[][] {{"DELL Automation"}};
-	}
-	@DataProvider(name="taskData")
-	public Object[][] gettaskData()
-	{
-		return new Object[][] {{"Task1"}};
 	}
 
 
