@@ -10,6 +10,7 @@
    			<class name="com.sgtesting.testngscenario.LoginLogoutDemo"></class>
    			<class name="com.sgtesting.testngscenario.ModifyProject"></class>
    			<class name="com.sgtesting.testngscenario.ModifyUserScenario"></class>
+   			<class name="com.sgtesting.testngscenario.CreateMultipleUser"></class> 	  					
    		</classes>
    </test>
 </suite>

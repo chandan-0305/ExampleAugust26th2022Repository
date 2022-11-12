@@ -1,5 +1,5 @@
-//launchBrowser --> navigate --> Login --> Create Customer --> Create Project--> Create Tasks -->Delete Tasks --> delete Project-->delete Customer --> Logout --> CloseApplication
-package com.sgtesting.testngscenario;
+//5. launchBrowser --> navigate --> Login --> Create Customer -->Modify Customer --> delete Customer --> Logout --> CloseApplication
+package com.sgtesting.Testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,9 +9,8 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class CreateTask {
+public class CustomerModify {
 	public static WebDriver oBrowser=null;
-	
 	@Test(priority = 1)
 	private static void launchBrowser()
 	{
@@ -76,7 +75,9 @@ public class CreateTask {
    
 	@Test(priority = 5 , dataProvider="createuser")
 	private static void createCustomer(String cname,String cdetails)
-	{		
+	{
+		
+
 		try
 		{
 			oBrowser.findElement(By.xpath("//*[@id=\'topnav\']/tbody/tr/td[3]/a/div[2]")).click();
@@ -94,97 +95,27 @@ public class CreateTask {
 			e.printStackTrace();
 		}
 	}
-	@Test(priority = 6 ,dataProvider="projectData")
-	private static void createProject(String pname)
-	{
-		
-		try
-		{
-			oBrowser.findElement(By.xpath("//*[@id='cpTreeBlock']/div[2]/div[1]/div[2]/div/div[2]")).click();
-			Thread.sleep(2000);
-			oBrowser.findElement(By.xpath("//div[text()='+ New Project']")).click();
-			Thread.sleep(3000);
-			oBrowser.findElement(By.id("projectPopup_projectNameField")).sendKeys(pname);
-			Thread.sleep(2000);		
-			oBrowser.findElement(By.xpath("//span[text()='Create Project']")).click();
-			Thread.sleep(3000);
-			WebElement pLink=oBrowser.findElement(By.xpath("//div[text()='DELL Automation']"));
-			Assert.assertTrue(pLink.isDisplayed());
-		}catch(Exception e)
-		{
-			e.printStackTrace();
-		}
-
-	}
 	
-	@Test(priority = 7 ,dataProvider="taskData")
-	private static void CreateTask(String tsk)
+	@Test(priority = 6 , dataProvider="modifycus")
+	private static void modifyCustomer(String modc)
 	{
-		
 		try
 		{
-			oBrowser.findElement(By.xpath("//div[text()='Add New Task']")).click();
+			oBrowser.findElement(By.xpath("//div[text()=\'Wonderla\']")).click();
 			Thread.sleep(2000);
-			oBrowser.findElement(By.xpath("//div[text()='Create new tasks']")).click();
-			Thread.sleep(2000);			
-			oBrowser.findElement(By.xpath("//*[@id=\'createTasksPopup_createTasksTableContainer\']/table/tbody/tr[1]/td[1]/input")).sendKeys(tsk);
-			Thread.sleep(3000);
-			WebElement tLink=oBrowser.findElement(By.xpath("//span[text()='Create Tasks']"));
-			Assert.assertTrue(tLink.isDisplayed());
-			oBrowser.findElement(By.xpath("//span[text()='Create Tasks']")).click();
-			Thread.sleep(3000);	
-			
+			oBrowser.findElement(By.xpath("//div[text()=\'Wonderla\']")).clear();
+			Thread.sleep(2000);
+			oBrowser.findElement(By.xpath("//div[text()=\'Wonderla\']")).sendKeys(modc);
+			Thread.sleep(2000);
+			WebElement mcLink=oBrowser.findElement(By.xpath("///div[text()=\'Wonderla1\']"));
+			Assert.assertTrue(mcLink.isDisplayed());
+					
 		}catch(Exception e)
-
 		{
 			e.printStackTrace();
 		}
 	}
-	
-	@Test(priority = 8)
-	private static void DeleteTask()
-	{
-		try
-		{
-			oBrowser.findElement(By.xpath("//*[@id=\'taskListBlock\']/div[1]/div[2]/div[1]/table[1]/tbody/tr/td[2]/div/div[2]")).click();
-			Thread.sleep(2000);
-			oBrowser.findElement(By.xpath("//*[@id=\'taskListBlock\']/div[3]/div[1]/div[2]/div[3]/div/div/div[2]")).click();
-			Thread.sleep(2000);
-			oBrowser.findElement(By.xpath("//*[@id=\'taskListBlock\']/div[3]/div[4]/div/div[3]/div")).click();
-			Thread.sleep(2000);		
-			oBrowser.findElement(By.id("taskPanel_deleteConfirm_submitTitle")).click();
-			Thread.sleep(2000);	
-			
-		}catch(Exception e)
-
-		{
-			e.printStackTrace();
-		}
-	}
-	
-	
-	@Test(priority = 9)
-	private static void deleteProject()
-	{
-		try
-		{
-			oBrowser.findElement(By.xpath("//*[@id='cpTreeBlock']/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div[4]")).click();
-			Thread.sleep(2000);
-			
-			oBrowser.findElement(By.xpath("//div[text()='ACTIONS']")).click();
-			Thread.sleep(2000);
-			oBrowser.findElement(By.xpath("//div[text()='Delete']")).click();
-			Thread.sleep(2000);
-			oBrowser.findElement(By.xpath("//span[text()='Delete permanently']")).click();
-			Thread.sleep(2000);
-			
-		}catch(Exception e)
-		{
-			e.printStackTrace();
-		}
-		}
-	
-	@Test(priority = 10)
+	@Test(priority = 7)
 	private static void deleteCustomer()
 	{
 
@@ -197,7 +128,7 @@ public class CreateTask {
 			oBrowser.findElement(By.xpath("//*[@id=\'taskListBlock\']/div[2]/div[4]/div/div[3]/div")).click();	
 			Thread.sleep(2000);
 			oBrowser.findElement(By.id("customerPanel_deleteConfirm_submitTitle")).click();
-
+			
 		}catch(Exception e)
 		{
 			e.printStackTrace();
@@ -205,7 +136,7 @@ public class CreateTask {
 
 	}
 	
-	@Test(priority =11)
+	@Test(priority = 8)
 	private static void logout()
 	{
 		try
@@ -218,7 +149,7 @@ public class CreateTask {
 		}
 	}
     
-	@Test(priority = 12)
+	@Test(priority = 9)
 	private static void closeApp()
 	{
 		try
@@ -241,17 +172,11 @@ public class CreateTask {
 	{
 		return new Object[][] {{"Wonderla","Amusment park Ticketing Software"}};
 	}
-	@DataProvider(name="projectData")
-	public Object[][] getprojectData()
+	@DataProvider(name="modifycus")
+	public Object[] getmodifycus()
 	{
-		return new Object[][] {{"DELL Automation"}};
+		return new Object[][] {{"Wonderla1"}};
 	}
-	@DataProvider(name="taskData")
-	public Object[][] gettaskData()
-	{
-		return new Object[][] {{"Task1"}};
-	}
-
-
+	
 
 }

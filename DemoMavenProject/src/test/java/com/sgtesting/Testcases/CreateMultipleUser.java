@@ -1,7 +1,7 @@
 //3. launchBrowser --> navigate --> Login --> Create User1 --> Create User2--> Create User3 --> Logout from admin --> Login as User1 --> logout as user1 --> Login as User2 --> logout as User2 --> Login as User3 --> logout as user3 --> Login as User1 --> Modify Password --> Logout as user1 -->Login as User2 --> Modify Password --> Logout as user2 -->Login as User3 --> Modify Password --> Logout as user3 --> Login as User1 using new pasword --> Logout as User1 -->Login as User2 using new pasword --> Logout as User2 --> Login as User3 using new pasword --> Logout as User3 --> Login as Admin --> Modify Password for 
 //User1 , User2, User3 --> Logout as Admin --> Login as User1 using new pasword --> Logout as User1 -->Login as User2 using new pasword --> Logout as User2 --> Login as User3 using new pasword --> Logout as User3 -->Login as Admin --> Delete User1, User2, User3 --> Logout as Admin
 
-package com.sgtesting.testngscenario;
+package com.sgtesting.Testcases;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;

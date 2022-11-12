@@ -1,5 +1,5 @@
 //launchBrowser --> navigate --> Login --> Create Customer --> Create Project--> Create Tasks -->Delete Tasks --> delete Project-->delete Customer --> Logout --> CloseApplication
-package com.sgtesting.testngscenario;
+package com.sgtesting.Testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
