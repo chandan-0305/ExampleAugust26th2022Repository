@@ -1,4 +1,4 @@
-package com.sgtesting.Testcases;
+package com.sgtesting.testUser;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
