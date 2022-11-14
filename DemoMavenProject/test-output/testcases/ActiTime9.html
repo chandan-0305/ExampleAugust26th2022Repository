@@ -1,0 +1,260 @@
+<html>
+<head>
+<title>TestNG:  ActiTime9</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ActiTime9</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>36/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Nov 12 13:01:58 GMT-08:00 2022</td>
+</tr>
+<tr><td>Total time:</td><td>114 seconds (114025 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.User1()'><b>User1</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser<br>Parameters: demo, A, User1, demo@gmail.com, demoUser1, 12345a, 12345a</td>
+<td></td>
+<td>16</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.Logoutuser2()'><b>Logoutuser2</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.Modifyuser2()'><b>Modifyuser2</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.Thirdtimeuser3logout()'><b>Thirdtimeuser3logout</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.login()'><b>login</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser<br>Parameters: admin, manager</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.SecondtimeLogoutuser1()'><b>SecondtimeLogoutuser1</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.AdminModifyuser1()'><b>AdminModifyuser1</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.Logoutuser3()'><b>Logoutuser3</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.LoginUser3()'><b>LoginUser3</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.ThirdtimeAdminlogout()'><b>ThirdtimeAdminlogout</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.SecontimeLoginUser1()'><b>SecontimeLoginUser1</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.SecondtimeadminLogin()'><b>SecondtimeadminLogin</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.Modifyuser3()'><b>Modifyuser3</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.ThirdtimeLoginUser1()'><b>ThirdtimeLoginUser1</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.navigate()'><b>navigate</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.LoginUser2()'><b>LoginUser2</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.Thirdtimeuser2logout()'><b>Thirdtimeuser2logout</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.LoginUser1()'><b>LoginUser1</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.User2()'><b>User2</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser<br>Parameters: demo, s, sam, sam@gmail.com, Demouser2, 123321, 123321</td>
+<td></td>
+<td>12</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.CloseBrowser()'><b>CloseBrowser</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.SecondtimeLoginUser2()'><b>SecondtimeLoginUser2</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.Thirdtimeuser1logout()'><b>Thirdtimeuser1logout</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.SecondtimeAdminlogout()'><b>SecondtimeAdminlogout</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.ThirdtimeLoginUser2()'><b>ThirdtimeLoginUser2</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.SecondtimeLogoutuser3()'><b>SecondtimeLogoutuser3</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.ThirdtimeLoginUser3()'><b>ThirdtimeLoginUser3</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.minimizeFlyOutwindow()'><b>minimizeFlyOutwindow</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.User3()'><b>User3</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser<br>Parameters: demo, s, niki, niki@gmail.com, Demouser3, 121212, 121212</td>
+<td></td>
+<td>12</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.Modifyuser1()'><b>Modifyuser1</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>11</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.SecondtimeLogoutuser2()'><b>SecondtimeLogoutuser2</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.SecondtimeLoginUser3()'><b>SecondtimeLoginUser3</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.Logoutuser1()'><b>Logoutuser1</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.DeleteUesers()'><b>DeleteUesers</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.thirdtimeadminLogin()'><b>thirdtimeadminLogin</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+<tr>
+<td title='com.sgtesting.Testcases.CreateMultipleUser.Logout()'><b>Logout</b><br>Test class: com.sgtesting.Testcases.CreateMultipleUser</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.Testcases.CreateMultipleUser@17f9d882</td></tr>
+</table><p>
+</body>
+</html>
