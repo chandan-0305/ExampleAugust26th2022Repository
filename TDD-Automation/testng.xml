@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test Cases">
+	<test name="Sample Test Cases">
+    <classes>
+    <class name="com.sgtesting.calculator.testcases.AdditionTestcases"></class>
+    <class name="com.sgtesting.calculator.testcases.MultiplicationTestcases"></class>
+    <class name="com.sgtesting.calculator.testcases.SubstractionTestcases"></class>
+    <class name="com.sgtesting.calculator.testcases.DivisionTestcases"></class>
+    </classes>
+	</test>
+</suite>
