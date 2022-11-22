@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="BDD Cucumber">
+	<test name="Scenarios">
+		<classes>
+			<class
+				name="com.sgtesting.actitime.driverscript.DriverScript"></class>
+		</classes>
+	</test>
+</suite>
