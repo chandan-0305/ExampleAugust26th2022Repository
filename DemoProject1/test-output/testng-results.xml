@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BDD Cucumber" duration-ms="98495" started-at="2022-11-25T09:14:23 GMT-08:00" finished-at="2022-11-25T09:16:02 GMT-08:00">
+    <groups>
+    </groups>
+    <test name="Scenarios" duration-ms="98495" started-at="2022-11-25T09:14:23 GMT-08:00" finished-at="2022-11-25T09:16:02 GMT-08:00">
+      <class name="com.sgtesting.actitime.LoginLogoutDemo">
+        <test-method status="PASS" signature="launchBrowser()[pri:1, instance:com.sgtesting.actitime.LoginLogoutDemo@5ed828d]" name="launchBrowser" duration-ms="30492" started-at="2022-11-25T09:14:23 GMT-08:00" finished-at="2022-11-25T09:14:54 GMT-08:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="navigate()[pri:2, instance:com.sgtesting.actitime.LoginLogoutDemo@5ed828d]" name="navigate" duration-ms="36824" started-at="2022-11-25T09:14:54 GMT-08:00" finished-at="2022-11-25T09:15:31 GMT-08:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method status="PASS" signature="login(java.lang.String,java.lang.String)[pri:3, instance:com.sgtesting.actitime.LoginLogoutDemo@5ed828d]" name="login" duration-ms="11316" started-at="2022-11-25T09:15:31 GMT-08:00" data-provider="login" finished-at="2022-11-25T09:15:42 GMT-08:00">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="minimizeFlyOutwindow()[pri:4, instance:com.sgtesting.actitime.LoginLogoutDemo@5ed828d]" name="minimizeFlyOutwindow" duration-ms="2291" started-at="2022-11-25T09:15:42 GMT-08:00" finished-at="2022-11-25T09:15:44 GMT-08:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- minimizeFlyOutwindow -->
+        <test-method status="PASS" signature="logout()[pri:5, instance:com.sgtesting.actitime.LoginLogoutDemo@5ed828d]" name="logout" duration-ms="13087" started-at="2022-11-25T09:15:44 GMT-08:00" finished-at="2022-11-25T09:15:57 GMT-08:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="closeApp()[pri:6, instance:com.sgtesting.actitime.LoginLogoutDemo@5ed828d]" name="closeApp" duration-ms="4333" started-at="2022-11-25T09:15:57 GMT-08:00" finished-at="2022-11-25T09:16:02 GMT-08:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.sgtesting.actitime.LoginLogoutDemo -->
+    </test> <!-- Scenarios -->
+  </suite> <!-- BDD Cucumber -->
+</testng-results>
